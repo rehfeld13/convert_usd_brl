@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #BBD6B8;
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+
+}
+
+.container .title{
+  font-size: 60px;
+  color: #036129;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.container .coins{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.container .coins img:nth-child(2){
+  width: 40px;
+}
+
+.container #inputValue{
+  width: 205px;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: #f6fdf8;
+  color: rgb(10, 179, 100);
+  margin-bottom: 20px;
+}
+
+.container #inputValue:focus{
+  border: 1px solid #036129;
+}
+
+.container #inputValue::placeholder{
+  color: rgb(10, 179, 100);
+  opacity: 0.4;
+}
+
+.container #buttonEnviar{
+  padding: 10px 50px;
+  background-color: #036129;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.container #buttonEnviar:hover{
+  cursor: pointer;
+  background-color: #19924a;
+}
+
+.container #result{
+  margin-top: 20px;
+  color: #036129;;
+}
+
+@media (max-width: 321px){
+  .container .title{
+    font-size: 30px;
+}}
